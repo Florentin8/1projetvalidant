@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>Google</title>
+        <style>
+          .html, body {
+            margin: 0;
+            font-family: 'Roboto';
+          }
+          .container {
+            background-color: ;
+            height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+          }
+
+          header {
+            flex: 0;
+            min-height: 70px;
+            background-color: ;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: arial, sans-serif;
+            font-size: 13px;
+            padding-right: 25px;
+            line-height: 10px;
+
+          }
+
+          header a {
+            text-decoration: none;
+            list-style-type: none;
+            color: grey;
+          }
+          header div{
+            margin: 8px;
+            background-color: ;
+          }
+
+          section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 300px;
+          }
+
+          section div{
+            margin: 10px;
+          }
+
+          .input {
+            width: 610px;
+            max-width: 100vw;
+            box-sizing: border-box;
+            border: 1px #D8D8D8 solid;
+            box-shadow: 3px 3px 3px #D8D8D8 ;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #A4A4A4 ;
+            border-radius: 2px;
+            padding: 12px 20px 12px 10px;
+          }
+
+          .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #666666 ;
+            border: 1px #FFFFFF solid;
+            font-size: 13px;
+            background: #f2f2f2 ;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+          }
+
+          .btn:hover {
+            background: #ffffff ;
+            text-decoration: none;
+            border: 1px #D8D8D8 solid;
+            color: #000000 ;
+          }
+
+          footer {
+            flex: 0;
+            min-height: 45px;
+            overflow-x: scroll;
+            background-color:;
+            display: flex;
+            flex-direction: row;
+            background-color: #f2f2f2;
+            font-size: 13px;
+          }
+
+          footer a {
+            text-decoration: none;
+            list-style-type: none;
+            color: grey;
+
+          }
+
+          .fixed_sized {
+            white-space: nowrap;
+            flex: 0;
+            background-color:   ;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+          }
+
+          .center {
+            flex: 1;
+          }
+
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <div> <a href="https://accounts.google.com">Gmail</a></div>
+          <div> <a href="https://www.google.fr/imghp?hl=es&tab=wi">Images</a></div>
+          <div> <a href="https://www.google.fr/intl/es/about/products/">
+            <img src="img/menu2.png" class="menu" width="22" height="22"></a></div>
+          <div> <a href="https://accounts.google.com">
+            <img src="img/sh.png" class="connection" width="100" height="32"></a></div>
+        </header>
+
+        <section>
+          <div style="position: relative;">
+            <h3 style="position: absolute; right: 0; bottom: 0; color: lightgray;"> France </h3>
+            <img class="logo" src="img/googlelogo.png" alt="logogoogle" title="Google" width="270" height="117"/>
+          </div>
+          <div><input type="text" name="googlesearch"
+            value="Rechercher sur Google ou saisir un URL" class="input"></div>
+          <div style="display: flex; flex-direction: row;">
+            <div><input type="submit" value="Recherche Google" class="btn"></div>
+            <div><input type="submit" value="J'ai de la chance" class="btn"></div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="fixed_sized"><a href="https://www.google.fr/intl/fr/ads/?fg=1">Publicite</a></div>
+          <div class="fixed_sized"><a href="https://www.google.fr/services/?fg=1#?modal_active=none">Entreprise</a></div>
+          <div class="fixed_sized"><a href="https://www.google.fr/intl/fr/about/">A propos</a></div>
+          <div class="center"> </div>
+          <div class="fixed_sized"><a href="https://www.google.fr/intl/fr/policies/privacy/?fg=1">Confidentialite</a></div>
+          <div class="fixed_sized"><a href="https://www.google.fr/intl/fr/policies/terms/regional.html">Conditions</a></div>
+          <div class="fixed_sized"><a href="https://www.google.fr/preferences?hl=fr">Parametres</a></div>
+        </footer>
+      </div>
+    </body>
+</html>
